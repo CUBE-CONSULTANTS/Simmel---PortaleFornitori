@@ -1,0 +1,67 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+  xmlns:m="sap.m"
+  xmlns:fb="sap.ui.comp.filterbar"
+>
+<Dialog
+contentWidth="700px"
+contentHeight="800px"
+title="{i18n>Descrizione}"
+>
+<fb:FilterBar
+search="onSearch"
+clear="onResetInt"
+showClearOnFB="true"
+useToolbar="false"
+showFilterConfiguration="false"
+>
+<fb:filterGroupItems>
+  <fb:FilterGroupItem
+    name="Cid"
+    label="{i18n>InserireDescrizione}"
+    groupName="Filtri"
+    groupTitle="Filtri"
+    visibleInFilterBar="true"
+  >
+    <fb:control>
+      <Input
+        value="{sFilter>/Pernr}"
+        placeholder="{i18n>InserireDescrizione}"
+        change="onSearch"
+        type="Text"
+      />
+    </fb:control>
+  </fb:FilterGroupItem>
+</fb:filterGroupItems>
+</fb:FilterBar>
+<List
+			items=""
+			growing="true"
+			growingThreshold="50"
+			headerText="{i18n>Descrizione}"
+		>
+			<m:CustomListItem
+				type="Active"
+				press="onSelect"
+			>
+				<m:content>
+					<m:HBox>
+						<m:VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+							<m:Title text="" />
+						</m:VBox>
+					</m:HBox>
+				</m:content>
+			</m:CustomListItem>
+		</List>
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer />
+				<m:Button
+					text="{i18n>Chiudi}"
+					press="onClose"
+				/>
+			</OverflowToolbar>
+    </footer>
+</Dialog>
+</c:FragmentDefinition>

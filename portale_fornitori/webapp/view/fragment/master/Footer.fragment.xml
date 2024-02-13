@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <OverflowToolbar >
+        <Title text="Utente: {userModel>/nome}" />
+           
+        <ToolbarSpacer />
+
+        <Button text="{i18n>esci}"
+        icon="sap-icon://log"
+            type="Reject"
+            press=".onLogoutPress" />
+            
+    </OverflowToolbar>
+</core:FragmentDefinition>

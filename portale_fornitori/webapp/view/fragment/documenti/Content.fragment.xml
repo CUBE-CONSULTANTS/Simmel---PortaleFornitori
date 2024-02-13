@@ -1,0 +1,98 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+<VBox backgroundDesign="Transparent" height="100%" width="100%" class="sapUiSmallMarginTopBottom">
+
+<Table
+      sticky="HeaderToolbar,ColumnHeaders"
+      growing="true"
+      autoPopinMode="true"
+      class="table"
+      items="{docModel>/}"
+      > 
+      <headerToolbar>
+        <OverflowToolbar design="Transparent" height="10vh">
+          <VBox class="sapUiResponsivePadding--content"
+          >
+          <Text text="{i18n>GestioneDocumenti}" />      
+          </VBox>
+        </OverflowToolbar>
+        </headerToolbar>
+
+      <columns>
+        <Column width="100px"  hAlign="Left">
+          <Text text="{i18n>Descrizione}" />
+        </Column>
+        <Column width="60px"  hAlign="Center">
+          <Text text="{i18n>Scarica}" />
+        </Column>
+        <Column width="100px"  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }">
+          <Text text="{i18n>Validazione}" />
+        </Column>
+        <Column width="60px"  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+          <Text text="{i18n>Allega}" />
+        </Column>
+        <Column width="60px"  hAlign="Center">
+          <Text text="{i18n>Stato}" />
+        </Column>
+        <Column width="130px" hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }">
+          <Text text="{i18n>Datacaricamento}" />
+          </Column>   
+          <Column width="60px"  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+            <Text text="{i18n>Esito}" />
+          </Column>
+        <Column width="90px" hAlign="Center">
+        <Text text="{i18n>Scadenza}" />
+      </Column> 
+            
+      </columns>
+      <items>
+        <ColumnListItem
+         
+        >
+          <cells>
+            <Text text="{docModel>descrizione}" />
+          </cells>
+          <cells>
+            <Button
+                visible="{= !${docModel>scarica}? false : true}"
+                icon="{docModel>scarica}"
+                type="Emphasized"
+            />
+          </cells>
+          <cells>          
+            <Select width="150px" items="{valModel>/}">
+              <c:Item key="{valModel>value}" text="{valModel>text}"/>
+            </Select>
+          </cells>
+          <cells>
+            <Button
+                type="Emphasized"
+                icon="{docModel>allega}"   
+                press="onOpenMaskAllega"             
+            />
+          </cells>
+          <cells>
+            <c:Icon
+                alt="Download"              
+                size="1.3rem"
+                src="{docModel>stato}"
+                color="{docModel>color}"
+            />
+          </cells>
+          <cells>
+            <Text text="{docModel>data}" />
+          </cells>
+          <cells>
+            <Text text="{docModel>esito_validazione}" />
+          </cells>
+          <cells >
+            <Input textAlign="Center" value="{docModel>scadenza}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${docModel>editable} }" />
+          </cells>
+          
+        </ColumnListItem>
+      </items>
+      </Table>
+</VBox>
+</c:FragmentDefinition>

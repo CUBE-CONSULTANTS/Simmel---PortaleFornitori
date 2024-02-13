@@ -1,0 +1,213 @@
+{
+  "azienda": [
+    {
+      "codice": "32894823",
+      "nome": "AVIOMETAL",
+      "paese": "Italia",
+      "indirizzo": {
+        "via": "Via Sempione, 15",
+        "cap": "21010",
+        "comune": "Arsago Seprio",
+        "provincia": "VA",
+        "stato": "IT"
+      },
+      "status": "sap-icon://status-positive",
+      "color": "green",
+      "lingua": "Italiano",
+      "contatti": {
+        "telefono": {
+          "interno": "0331 279414"
+        },
+        "fax": {
+          "interno": "0331 279400"
+        },
+        "email": "f.dibelucci@aviometal.com"
+      },
+      "partita_iva": "IT02411130129"
+    },
+    {
+      "codice": "5831",
+      "nome": "ELTOS SPA",
+      "paese": "Italia",
+      "indirizzo": {
+        "via": "Via Sempione, 15",
+        "cap": "21010",
+        "comune": "Arsago Seprio",
+        "provincia": "VA",
+        "stato": "IT"
+      },
+      "status": "sap-icon://status-negative",
+      "color": "red",
+      "lingua": "Italiano",
+      "contatti": {
+        "telefono": {
+          "interno": "0331 279414"
+        },
+        "fax": {
+          "interno": "0331 279400"
+        },
+        "email": "f.dibelucci@aviometal.com"
+      },
+      "partita_iva": "IT02411130129"
+    }
+  ],
+  "documenti": [
+    {
+      "descrizione": "DURC",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Copia C.C.I.A.A. + Nulla Osta art. 10 legge n° 575 del 31 maggio 1965",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Copia Nulla Osta dell’Ufficio di collocamento",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Copia documento di riconoscimento di ogni dipendente",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Copia ordine di lavoro e/o sub-appalto",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-in-process",
+      "esito_validazione": "In Attesa",
+      "data": "12/02/2024",
+      "color": "orange",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Libretto di circolazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Attestati formazione secondo il d.lgs 81/08",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Contrassegno assicurazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "DICHIARAZIONE DI RESPONSABILITA’",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Copia polizza assicurativa di cantiere, con copertura R.C.T. / R.C.O.",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-in-process",
+      "esito_validazione": "In Attesa",
+      "data": "12/02/2024",
+      "color": "orange",
+      "scadenza": "25/03/2024",
+      "editable": true
+    },
+    {
+      "descrizione": "Copia ultimo libro unico del lavoro del personale in ingresso",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-in-process",
+      "esito_validazione": "In Attesa",
+      "data": "12/02/2024",
+      "color": "orange",
+      "scadenza": "25/03/2024",
+      "editable": true
+    }
+  ],
+  "validazione": [
+    {
+      "value": "",
+      "text": ""
+    },
+    {
+      "value": "V",
+      "text": "Validato"
+    },
+    {
+      "value": "N",
+      "text": "Non Validato"
+    }
+  ]
+}

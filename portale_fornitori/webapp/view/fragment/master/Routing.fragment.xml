@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <List backgroundDesign="Transparent">
+        <StandardListItem title ="{= ${userModel>/tipoUtente} === 'Interno' ? ${i18n>AnagraficaFornitore} : ${i18n>Anagrafica} }"         
+            type="Navigation"
+            press="onAnagraficaBtnPress"/>
+        <StandardListItem title="{i18n>Documenti}"       
+            type="Navigation"
+            press="onDocBtnPress" />
+        <StandardListItem title="{i18n>Template}"
+            visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }" 
+            type="Navigation"
+            press=".navToTemplate" />       
+    </List>
+</core:FragmentDefinition>

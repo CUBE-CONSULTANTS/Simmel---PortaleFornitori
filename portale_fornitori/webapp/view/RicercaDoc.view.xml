@@ -1,0 +1,23 @@
+<mvc:View controllerName="portalefornitori.portalefornitori.controller.RicercaDoc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    height="100%"
+    displayBlock="true">
+    <f:DynamicPage showFooter="false"
+        busy="{master>/options/busy}"
+        busyIndicatorDelay="0"
+        preserveHeaderStateOnScroll="false"
+        toggleHeaderOnTitleClick="true">
+        <f:header>
+          <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.ricercaDoc.Header"
+          type="XML" />
+        </f:header>
+        <f:content>   
+            <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.ricercaDoc.Content"
+                type="XML" />                
+        </f:content>       
+    </f:DynamicPage>
+</mvc:View>

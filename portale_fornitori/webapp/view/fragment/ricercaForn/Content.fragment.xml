@@ -1,0 +1,144 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+  xmlns:fb="sap.ui.comp.filterbar"
+>
+
+<VBox  height="100%" width="100%" class="sapUiSmallMarginTopBottom">
+  
+  <fb:FilterBar
+  search="onFilterAvv"
+  clear="onReset"
+  useToolbar="false"
+  showFilterConfiguration="false"
+  class="sapUiSmallMarginBottom"
+>
+  <fb:filterGroupItems>
+    <fb:FilterGroupItem
+      name="CodForn"
+      label="{i18n>CodiceFornitore}"
+      groupName="Filtri"
+      groupTitle="Filtri"
+      visibleInFilterBar="true"
+    >
+      <fb:control>
+        <Input
+          value="{Filtro>/Fornitore}"
+          showValueHelp="true"
+          
+          submit="onChangeFornitore"
+          type="Text"
+        />
+      </fb:control>
+    </fb:FilterGroupItem>
+    <fb:FilterGroupItem
+      name="descr"
+      label="{i18n>Descrizione}"
+      groupName="Filtri"
+      groupTitle="Filtri"
+      visibleInFilterBar="true"
+    >
+    <fb:control>
+      <Input
+        value="{Filtro>/descr}"
+        showValueHelp="true"
+        valueHelpRequest=".handleValueHelp"
+        submit="onChangeFornitore"
+        type="Text"
+      />
+    </fb:control>
+    </fb:FilterGroupItem>
+    <fb:FilterGroupItem
+    name="Paese"
+    label="{i18n>Paese}"
+    groupName="Filtri"
+    groupTitle="Filtri"
+    visibleInFilterBar="true"
+  >
+    <fb:control>
+      <Input
+      value="{Filtro>/Paese}"
+        showValueHelp="true"
+        
+        submit="onChangeFornitore"
+        type="Text"
+      />
+    </fb:control>
+  </fb:FilterGroupItem>
+  <fb:FilterGroupItem
+  name="P.IVA"
+  label="{i18n>PIVA}"
+  groupName="Filtri"
+  groupTitle="Filtri"
+  visibleInFilterBar="true"
+>
+  <fb:control>
+    <Input
+    value="{Filtro>/piva}"
+      showValueHelp="true"
+      
+      submit="onChangeFornitore"
+      type="Text"
+    />
+  </fb:control>
+</fb:FilterGroupItem>
+
+  </fb:filterGroupItems>
+</fb:FilterBar>
+<Table
+sticky="HeaderToolbar,ColumnHeaders"
+growing="true"
+autoPopinMode="true"
+class="table"
+items="{anagraficaModel>/}"
+> 
+     <columns>
+  <Column width="90px">
+    <Text text="{i18n>CodiceFornitore}" />
+  </Column>
+  <Column width="130px">
+    <Text text="{i18n>Descrizione }" />
+  </Column>
+  <Column width="90px">
+    <Text text="{i18n>Paese}" />
+  </Column>
+  <Column width="90px">
+    <Text text="{i18n>PIVA}" />
+  </Column>   
+  <Column
+    width="90px"
+    hAlign="Center"
+  >
+    <Text text="{i18n>Stato}" />
+  </Column>        
+</columns>
+<items>
+  <ColumnListItem
+    type="Navigation"
+    press="navToAnagrafica"
+  >
+    <cells>
+      <Text text="{anagraficaModel>codice}" />
+    </cells>
+    <cells>
+      <Text text="{anagraficaModel>nome}" />
+    </cells>
+    <cells>
+      <Text text="{anagraficaModel>paese}" />
+    </cells>
+    <cells>
+      <Text text="{anagraficaModel>partita_iva}" />
+    </cells>
+    <cells>
+      <c:Icon
+          alt="statusOk"
+          color="{anagraficaModel>color}"
+          size="1.3rem"
+          src="{anagraficaModel>status}"
+      />
+    </cells>     
+  </ColumnListItem>
+</items>
+</Table>
+</VBox>
+</c:FragmentDefinition>

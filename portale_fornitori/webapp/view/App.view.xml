@@ -1,0 +1,10 @@
+<mvc:View controllerName="portalefornitori.portalefornitori.controller.App"
+xmlns:mvc="sap.ui.core.mvc"
+displayBlock="true"
+xmlns="sap.f"
+height="100%">
+<FlexibleColumnLayout id="app"
+    stateChange="onStateChanged"
+    layout="TwoColumnsMidExpanded"
+    backgroundDesign="Translucent" />
+</mvc:View>

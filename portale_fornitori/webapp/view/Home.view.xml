@@ -1,0 +1,27 @@
+<mvc:View controllerName="portalefornitori.portalefornitori.controller.Master"
+xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    height="100%"
+    displayBlock="true">
+    <f:DynamicPage
+        showFooter="false"
+        busy="{master>/options/busy}"
+        busyIndicatorDelay="0"
+        backgroundDesign= "List"
+        preserveHeaderStateOnScroll="false"
+        toggleHeaderOnTitleClick="true">
+        <f:content>
+            <VBox width="100%" height="80%" class="sapUiMediumMarginBeginEnd" justifyContent="SpaceAround">
+                <VBox width="100%" alignItems="Center">
+                    <Image press=".navToMaster" height="80vh" width="40rem" src="../public/simmel_Logo2.svg" />
+                </VBox>
+                <VBox width="100%" alignItems="Center">
+                    <Title titleStyle="H2" level="H2" text="{i18n>welcomeMessage} {userModel>/nome}" />
+                </VBox>
+            </VBox>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

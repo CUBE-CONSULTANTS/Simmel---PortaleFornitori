@@ -1,0 +1,59 @@
+<c:FragmentDefinition
+xmlns="sap.m"
+xmlns:c="sap.ui.core"
+xmlns:f="sap.ui.layout.form"
+>
+<VBox backgroundDesign="Solid" alignItems="Inherit" class="sapUiSmallMarginTopBottom"   >
+<f:SimpleForm 
+class="sapUiTinyMarginTopBottom" 
+  editable="false"
+  layout="ResponsiveGridLayout"
+  labelSpanXL="4"
+  labelSpanL="2"
+  labelSpanM="12"
+  labelSpanS="12"
+  adjustLabelSpan="false"
+  emptySpanXL="0"
+  emptySpanL="1"
+  emptySpanM="0"
+  emptySpanS="0"
+  columnsXL="2"
+  columnsL="1"
+  columnsM="1"
+  singleContainerFullSize="false" 
+>
+  <f:content>
+    <Label text="{i18n>Nome}" />
+    <Input value="{anagraficaModel>/0/nome}" editable="false"/>
+    <Label text="{i18n>Via}" />
+    <Input value="{anagraficaModel>/0/indirizzo/via}" editable="false"/>
+    <Label text="{i18n>CAP}" />
+    <Input value="{anagraficaModel>/0/indirizzo/cap}" editable="false"/>
+    <Label text="{i18n>Comune}" />
+    <Input value="{anagraficaModel>/0/indirizzo/comune}" editable="false"/>
+    <Label text="{i18n>Provicia}" />
+    <Input value="{anagraficaModel>/0/indirizzo/provincia}" editable="false"/>
+    <Label text="{i18n>Stato}" />
+    <Input value="{anagraficaModel>/0/indirizzo/stato}" editable="false"/>
+    <Label text="{i18n>Lingua}" />
+    <Input value="{anagraficaModel>/0/lingua}" editable="false"/>
+    <Label text="{i18n>Telefono}" />
+    <Input value="{anagraficaModel>/0/contatti/telefono/interno}" editable="false"/>
+    <Label text="{i18n>Fax}" />
+    <Input value="{anagraficaModel>/0/contatti/fax/interno}" editable="false"/>
+    <Label text="{i18n>Email}" />
+    <Input value="{anagraficaModel>/0/contatti/email}" editable="false"/>
+    <Label text="{i18n>PIVA}" />
+    <Input value="{anagraficaModel>/0/partita_iva}" editable="false"/>
+    <!-- <Label text="Divisa" />
+    <Input/>
+    <Label text="Cond. Pagamento" />
+    <Input/>
+    <Label text="Incoterms" />
+    <Input/> -->
+    
+  </f:content>
+</f:SimpleForm>
+</VBox>
+
+</c:FragmentDefinition>

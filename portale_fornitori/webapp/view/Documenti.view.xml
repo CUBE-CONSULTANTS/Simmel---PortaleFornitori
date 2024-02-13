@@ -1,0 +1,43 @@
+<mvc:View controllerName="portalefornitori.portalefornitori.controller.Documenti"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    height="100%"
+    displayBlock="true">
+    <f:DynamicPage showFooter="true"
+        busy="{master>/options/busy}"
+        busyIndicatorDelay="0"
+        preserveHeaderStateOnScroll="false"
+        toggleHeaderOnTitleClick="true">
+        <f:header>
+          <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.documenti.Header"
+                type="XML" />
+        </f:header>
+        <f:content>
+            <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.documenti.Content"
+                type="XML" />
+        </f:content>
+        <f:footer>
+            <OverflowToolbar    
+            visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }"         
+            >
+            <Button                    
+            icon="sap-icon://nav-back"                    
+            text="{i18n>back}"                  
+            type="Emphasized"
+            press="navToRicercaDoc" 
+        />                   
+                <ToolbarSpacer
+                   />
+                   <Button                    
+                   icon="sap-icon://accept"                    
+                   text="{i18n>conferma}"                  
+                   type="Emphasized"
+                   press="navToRicercaDoc" 
+               />          
+            </OverflowToolbar>
+        </f:footer>
+    </f:DynamicPage>
+</mvc:View>

@@ -1,0 +1,76 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	xmlns:u="sap.ui.unified"
+>
+<VBox height="100%" backgroundDesign="Transparent" class="sapUiSmallMarginTopBottom">
+	<Table
+	class="table sapUiSmallMarginTop"
+	sticky="ColumnHeaders"
+	growing="true"
+	autoPopinMode="true"
+	> 
+	
+	<columns >
+		<Column width="60px" hAlign="Left">
+			<Text text="{i18n>IdDocumento}" />
+		</Column>
+		<Column width="10px"  hAlign="Center">
+			<Text text="{i18n>Allega}" />
+		</Column>			
+		
+		<!-- <Column width="35%" hAlign="Left">
+			<Text text="{i18n>Percorso}" />
+		</Column> -->
+		<Column width="50px"  hAlign="Left">
+			<Text text="{i18n>Datacaricamento}" />
+		</Column>
+		<Column width="50px" hAlign="Left">
+			<Text text="{i18n>FineValidita}" />
+		</Column>
+		
+	</columns>
+	<items>
+		<ColumnListItem
+		>
+			<cells>
+			<Input />
+			</cells>
+			<cells>
+				<Button
+						icon="sap-icon://upload"
+						type="Emphasized"
+						press="onOpenMaskAllega"
+				/>
+				<!-- <u:FileUploader
+				width="23rem"
+				class="uploader"
+				icon="sap-icon://search"
+				style="Emphasized"
+				id="fileUploader"
+				name="myFileUpload"
+				uploadUrl="upload/"
+				uploadComplete="handleUploadComplete"/> -->
+			</cells>
+			
+			<cells>
+				<DatePicker
+						editable="false"
+						value="08/02/2024"
+				>
+	
+				</DatePicker>
+				</cells>
+				<cells>
+					<DatePicker
+							
+					>
+							
+					</DatePicker>
+				</cells>
+					
+		</ColumnListItem>
+	</items>
+	</Table>
+</VBox>
+</c:FragmentDefinition>
