@@ -5,7 +5,7 @@
 >
 <VBox height="100%" backgroundDesign="Transparent" class="sapUiSmallMarginTopBottom">
 	<Table
-	class="table sapUiSmallMarginTop"
+	class="table"
 	sticky="ColumnHeaders"
 	growing="true"
 	autoPopinMode="true"

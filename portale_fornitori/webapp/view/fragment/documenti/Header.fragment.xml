@@ -1,12 +1,17 @@
-<core:FragmentDefinition
-    xmlns:core="sap.ui.core"
-    xmlns:f="sap.f"
-    xmlns="sap.m"
->
-    <f:DynamicPageHeader pinnable="false">
-        <Title
-            level="H3"
-            text="{i18n>Documenti } - {anagraficaModel>/0/nome} "
-            />
-    </f:DynamicPageHeader>
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+  xmlns:f="sap.f"
+  xmlns="sap.m"
+  >
+  <f:DynamicPageHeader pinnable="false">
+    <!-- <Title level="H3" text="{i18n>Documenti } - {anagraficaModel>/0/nome} " /> -->
+    <IconTabHeader class="sapUiResponsiveContentPadding" selectedKey="info" select="onIconTabSelect">
+      <items>
+        <IconTabFilter icon="sap-icon://notes" key="info" text="{i18n>Azienda}"/>
+          <IconTabSeparator icon="" />
+        <IconTabFilter icon="sap-icon://group" key="people" text="{i18n>Dipendenti}"/>
+          <IconTabSeparator icon="" />
+        <IconTabFilter icon="sap-icon://BusinessSuiteInAppSymbols/icon-box-truck" key="car" text="{i18n>Automezzi}"/>
+      </items>
+    </IconTabHeader>
+  </f:DynamicPageHeader>
 </core:FragmentDefinition>

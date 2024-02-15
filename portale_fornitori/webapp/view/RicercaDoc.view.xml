@@ -12,8 +12,10 @@
         preserveHeaderStateOnScroll="false"
         toggleHeaderOnTitleClick="true">
         <f:header>
-          <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.ricercaDoc.Header"
+            <f:DynamicPageHeader pinnable="false">
+          <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.ricercaDoc.filterbar"
           type="XML" />
+        </f:DynamicPageHeader>
         </f:header>
         <f:content>   
             <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.ricercaDoc.Content"

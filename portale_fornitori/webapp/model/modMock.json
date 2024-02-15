@@ -51,7 +51,7 @@
       "partita_iva": "IT02411130129"
     }
   ],
-  "documenti": [
+  "documenti_azienda": [
     {
       "descrizione": "DURC",
       "scarica": "sap-icon://download",
@@ -61,8 +61,124 @@
       "data": "12/02/2024",
       "color": "red",
       "scadenza": "25/03/2024",
-      "editable": true
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
     },
+    {
+      "descrizione": "Copia C.C.I.A.A. + Nulla Osta art. 10 legge n° 575 del 31 maggio 1965",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Copia Nulla Osta dell’Ufficio di collocamento",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Copia ordine di lavoro e/o sub-appalto",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Copia polizza assicurativa di cantiere, con copertura R.C.T. / R.C.O.",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-in-process",
+      "esito_validazione": "In Attesa",
+      "data": "12/02/2024",
+      "color": "orange",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    }
+  ],
+  "documenti_dipendenti": [
     {
       "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
       "scarica": "sap-icon://download",
@@ -72,117 +188,21 @@
       "data": "12/02/2024",
       "color": "green",
       "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Copia C.C.I.A.A. + Nulla Osta art. 10 legge n° 575 del 31 maggio 1965",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
-      "data": "12/02/2024",
-      "color": "green",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Copia Nulla Osta dell’Ufficio di collocamento",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-negative",
-      "esito_validazione": "Non Allegato",
-      "data": "12/02/2024",
-      "color": "red",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Copia documento di riconoscimento di ogni dipendente",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-negative",
-      "esito_validazione": "Non Allegato",
-      "data": "12/02/2024",
-      "color": "red",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Copia ordine di lavoro e/o sub-appalto",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
-      "data": "12/02/2024",
-      "color": "green",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
-      "scarica": "sap-icon://download",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-in-process",
-      "esito_validazione": "In Attesa",
-      "data": "12/02/2024",
-      "color": "orange",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Libretto di circolazione Automezzo",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
-      "data": "12/02/2024",
-      "color": "green",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Attestati formazione secondo il d.lgs 81/08",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-negative",
-      "esito_validazione": "Non Allegato",
-      "data": "12/02/2024",
-      "color": "red",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Contrassegno assicurazione Automezzo",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
-      "data": "12/02/2024",
-      "color": "green",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "DICHIARAZIONE DI RESPONSABILITA’",
-      "scarica": "sap-icon://download",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
-      "data": "12/02/2024",
-      "color": "green",
-      "scadenza": "25/03/2024",
-      "editable": true
-    },
-    {
-      "descrizione": "Copia polizza assicurativa di cantiere, con copertura R.C.T. / R.C.O.",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-in-process",
-      "esito_validazione": "In Attesa",
-      "data": "12/02/2024",
-      "color": "orange",
-      "scadenza": "25/03/2024",
-      "editable": true
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
     },
     {
       "descrizione": "Copia ultimo libro unico del lavoro del personale in ingresso",
@@ -193,21 +213,149 @@
       "data": "12/02/2024",
       "color": "orange",
       "scadenza": "25/03/2024",
-      "editable": true
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Copia documento di riconoscimento di ogni dipendente",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Attestati formazione secondo il d.lgs 81/08",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "12/02/2024",
+      "color": "red",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
     }
   ],
-  "validazione": [
+  "documenti_automezzi": [
     {
-      "value": "",
-      "text": ""
+      "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
+      "scarica": "sap-icon://download",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-in-process",
+      "esito_validazione": "In Attesa",
+      "data": "12/02/2024",
+      "color": "orange",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
     },
     {
-      "value": "V",
-      "text": "Validato"
+      "descrizione": "Libretto di circolazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
     },
     {
-      "value": "N",
-      "text": "Non Validato"
+      "descrizione": "Contrassegno assicurazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
     }
   ]
+  
 }

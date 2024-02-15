@@ -6,9 +6,14 @@ sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
         "portalefornitori/portalefornitori/model/models",
-        "sap/ui/model/json/JSONModel"
+        "sap/ui/model/json/JSONModel",
+        "sap/ui/core/IconPool"
     ],
-    function (UIComponent, Device, models,JSONModel) {
+    function (UIComponent,
+	Device,
+	models,
+	JSONModel,
+	IconPool) {
         "use strict";
         function getRandomUserType() {
             // Restituisce casualmente "Interno" o "Esterno"
@@ -45,8 +50,30 @@ sap.ui.define([
                   const randomUserType = getRandomUserType();
                   this.getModel("userModel").setProperty("/tipoUtente", randomUserType);
                   this.getModel("userModel").setProperty("/nome", randomUserType);    
-                  this.getRouter().navTo("Master");    
-            }
+                  this.getRouter().navTo("Master");  
+                  
+                //set icon pool
+                let b = [];
+                let c = {};
+                
+                let t = {
+                    fontFamily: "SAP-icons-TNT",
+                    fontURI: sap.ui.require.toUrl("sap/tnt/themes/base/fonts/")
+                };
+                
+                IconPool.registerFont(t);
+                b.push(IconPool.fontLoaded("SAP-icons-TNT"));
+                c["SAP-icons-TNT"] = t;
+                
+                let B = {
+                    fontFamily: "BusinessSuiteInAppSymbols",
+                    fontURI: sap.ui.require.toUrl("sap/ushell/themes/base/fonts/")
+                };
+                
+                IconPool.registerFont(B);
+                b.push(IconPool.fontLoaded("BusinessSuiteInAppSymbols"));
+                c["BusinessSuiteInAppSymbols"] = B;  
+                }
         });
     }
 );

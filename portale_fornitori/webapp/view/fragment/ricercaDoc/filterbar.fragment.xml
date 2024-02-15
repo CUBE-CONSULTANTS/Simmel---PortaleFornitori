@@ -1,0 +1,85 @@
+<c:FragmentDefinition
+xmlns="sap.m"
+xmlns:c="sap.ui.core"
+xmlns:fb="sap.ui.comp.filterbar"
+>
+<fb:FilterBar
+  search="onFilterAvv"
+  clear="onReset"
+  useToolbar="false"
+  showFilterConfiguration="false"
+  class="sapUiSmallMarginBottom"
+>
+  <fb:filterGroupItems>
+    <fb:FilterGroupItem
+      name="CodForn"
+      label="{i18n>CodiceFornitore}"
+      groupName="Filtri"
+      groupTitle="Filtri"
+      visibleInFilterBar="true"
+    >
+      <fb:control>
+        <Input
+          value="{Filtro>/Fornitore}"
+          showValueHelp="true"
+          
+          submit="onChangeFornitore"
+          type="Text"
+        />
+      </fb:control>
+    </fb:FilterGroupItem>
+    <fb:FilterGroupItem
+      name="descr"
+      label="{i18n>Descrizione}"
+      groupName="Filtri"
+      groupTitle="Filtri"
+      visibleInFilterBar="true"
+    >
+    <fb:control>
+      <Input
+        value="{Filtro>/descr}"
+        showValueHelp="true"
+        valueHelpRequest=".handleValueHelp"
+        submit="onChangeFornitore"
+        type="Text"
+      />
+    </fb:control>
+    </fb:FilterGroupItem>
+    <fb:FilterGroupItem
+    name="Paese"
+    label="{i18n>Paese}"
+    groupName="Filtri"
+    groupTitle="Filtri"
+    visibleInFilterBar="true"
+  >
+    <fb:control>
+      <Input
+      value="{Filtro>/Paese}"
+        showValueHelp="true"
+        
+        submit="onChangeFornitore"
+        type="Text"
+      />
+    </fb:control>
+  </fb:FilterGroupItem>
+  <fb:FilterGroupItem
+  name="P.IVA"
+  label="{i18n>PIVA}"
+  groupName="Filtri"
+  groupTitle="Filtri"
+  visibleInFilterBar="true"
+>
+  <fb:control>
+    <Input
+    value="{Filtro>/piva}"
+      showValueHelp="true"
+      
+      submit="onChangeFornitore"
+      type="Text"
+    />
+  </fb:control>
+</fb:FilterGroupItem>
+
+  </fb:filterGroupItems>
+</fb:FilterBar>
+</c:FragmentDefinition>
