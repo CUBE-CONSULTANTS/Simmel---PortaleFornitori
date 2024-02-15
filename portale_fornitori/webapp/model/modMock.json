@@ -322,31 +322,35 @@
   ],
   "documenti_automezzi": [
     {
-      "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
-      "scarica": "sap-icon://download",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-in-process",
-      "esito_validazione": "In Attesa",
-      "data": "12/02/2024",
-      "color": "orange",
-      "scadenza": "25/03/2024",
-      "editable": true,
-      "validazione": [
-        {
-          "value": "",
-          "text": ""
-        },
-        {
-          "value": "V",
-          "text": "Validato"
-        },
-        {
-          "value": "N",
-          "text": "Non Validato"
-        }
-      ]
-    },
-    {
+      "descrMezzo": "Test1",
+      "Targa": "DD023CZ",
+      "documenti" :[
+       {
+        "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
+        "scarica": "sap-icon://download",
+        "allega": "sap-icon://upload",
+        "stato": "sap-icon://status-in-process",
+        "esito_validazione": "In Attesa",
+        "data": "12/02/2024",
+        "color": "orange",
+        "scadenza": "25/03/2024",
+        "editable": true,
+        "validazione": [
+          {
+            "value": "",
+            "text": ""
+          },
+          {
+            "value": "V",
+            "text": "Validato"
+          },
+          {
+            "value": "N",
+            "text": "Non Validato"
+          }
+        ]
+       },
+      {
       "descrizione": "Libretto di circolazione Automezzo",
       "scarica": "",
       "allega": "sap-icon://upload",
@@ -394,6 +398,170 @@
           "value": "N",
           "text": "Non Validato"
         }
+      ]
+    }
+      ]
+    },
+    {
+      "descrMezzo": "Test2",
+      "Targa": "EF023CZ",
+      "documenti" :[
+       {
+        "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
+        "scarica": "sap-icon://download",
+        "allega": "sap-icon://upload",
+        "stato": "sap-icon://status-in-process",
+        "esito_validazione": "In Attesa",
+        "data": "12/02/2024",
+        "color": "orange",
+        "scadenza": "25/03/2024",
+        "editable": true,
+        "validazione": [
+          {
+            "value": "",
+            "text": ""
+          },
+          {
+            "value": "V",
+            "text": "Validato"
+          },
+          {
+            "value": "N",
+            "text": "Non Validato"
+          }
+        ]
+       },
+      {
+      "descrizione": "Libretto di circolazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Contrassegno assicurazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    }
+      ]
+    },
+    {
+      "descrMezzo": "Test3",
+      "Targa": "GH023CZ",
+      "documenti" :[
+       {
+        "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
+        "scarica": "sap-icon://download",
+        "allega": "sap-icon://upload",
+        "stato": "sap-icon://status-in-process",
+        "esito_validazione": "In Attesa",
+        "data": "12/02/2024",
+        "color": "orange",
+        "scadenza": "25/03/2024",
+        "editable": true,
+        "validazione": [
+          {
+            "value": "",
+            "text": ""
+          },
+          {
+            "value": "V",
+            "text": "Validato"
+          },
+          {
+            "value": "N",
+            "text": "Non Validato"
+          }
+        ]
+       },
+      {
+      "descrizione": "Libretto di circolazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Contrassegno assicurazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-positive",
+      "esito_validazione": "Validato",
+      "data": "12/02/2024",
+      "color": "green",
+      "scadenza": "25/03/2024",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    }
       ]
     }
   ]

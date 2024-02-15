@@ -1,5 +1,106 @@
 <c:FragmentDefinition
-	xmlns="sap.m"
-	xmlns:c="sap.ui.core"
->
+xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
+
+<t:TreeTable
+    rows="{path: 'mezziModel>/', parameters: {arrayNames:['documenti']}}"
+    selectionMode="None"
+    >
+    <t:extension>
+        <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }" style="Clear" design="Transparent" class="sapUiSmallMarginBottom">
+            <ToolbarSpacer />
+            <Button
+								text="Aggiungi Mezzo"
+                icon="sap-icon://add"
+                type="Emphasized"
+                press="addRow"
+            />
+            <Button
+								text="Rimuovi Mezzo"
+                icon="sap-icon://delete"
+                type="Reject"
+                press="deleteRow"
+            />
+        </Toolbar>
+    </t:extension>
+    <t:columns>
+        <t:Column width="10rem" >
+            <Label text="{i18n>Descrizione Automezzo}"/>
+            <t:template>
+              <Input class="emplText" textAlign="Center" visible="{= !${mezziModel>descrMezzo}? false : true}"
+               value="{mezziModel>descrMezzo}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${mezziModel>editable}}" />
+            </t:template>
+        </t:Column>
+        <t:Column width="9rem" >
+            <Label text="{i18n>Targa}"/>
+            <t:template>
+                <Input class="emplText" textAlign="Center" visible="{= !${mezziModel>Targa}? false : true}"
+                    value="{mezziModel>Targa}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${mezziModel>editable}}" />
+            </t:template>
+        </t:Column>
+        <t:Column width="18rem" hAlign="Left">
+            <Label text="{i18n>Documento}"/>
+            <t:template>
+                <Text text="{mezziModel>descrizione}"/>
+            </t:template>
+        </t:Column>
+        <t:Column hAlign="Center">
+            <Label text="{i18n>Scarica}"/>
+            <t:template>
+                <Button icon="{mezziModel>scarica}" type="Emphasized"
+                  visible="{= !${mezziModel>scarica}? false : true}"/>
+            </t:template>
+        </t:Column>
+        <t:Column  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }">
+          <Label text="{i18n>Validazione}"/>
+          <t:template>
+            <Select  items="{mezziModel>validazione}" visible="{= !${mezziModel>validazione}? false : true}">
+              <c:Item key="{mezziModel>value}" text="{mezziModel>text}"/>
+            </Select>
+          </t:template>
+      </t:Column>
+        <t:Column  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+            <Label text="{i18n>Allega}"/>
+            <t:template>
+              <Button
+              type="{= !${mezziModel>allega}? 'Transparent' : 'Emphasized'}"
+              icon="{mezziModel>allega}"   
+              press="onOpenMaskAllega"             
+          />
+            </t:template>
+        </t:Column>
+        <t:Column   hAlign="Center" >
+          <Label text="{i18n>Stato}"/>
+          <t:template>
+            <c:Icon
+                alt="Download"              
+                size="1.3rem"
+                src="{mezziModel>stato}"
+                color="{mezziModel>color}"          
+        />
+          </t:template>
+      </t:Column>
+      <t:Column  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }">
+            <Label text="{i18n>Datacaricamento}"/>
+            <t:template>
+                <Text text="{mezziModel>data}" />
+            </t:template>
+        </t:Column>
+        <t:Column   hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+            <Label text="{i18n>Esito}"/>
+            <t:template>
+                <Text text="{mezziModel>esito_validazione}" />
+            </t:template>
+        </t:Column>
+        <t:Column hAlign="Center">
+            <Label text="{i18n>Scadenza}"/>
+            <t:template>
+              <Input textAlign="Center" visible="{= !${mezziModel>scadenza}? false : true}"
+               value="{mezziModel>scadenza}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${mezziModel>editable} }" />
+            </t:template>
+        </t:Column>
+        
+    </t:columns>
+    <t:extension>
+    </t:extension>
+</t:TreeTable>
 </c:FragmentDefinition>

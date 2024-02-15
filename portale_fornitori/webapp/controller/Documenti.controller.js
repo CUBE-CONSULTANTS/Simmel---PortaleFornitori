@@ -27,7 +27,7 @@ sap.ui.define(
           this.setModel(oModelDocMezzi,"mezziModel")
           let oValDoc = new JSONModel(data.validazione)
           this.setModel(oValDoc, "valModel")
-          this.sKey
+          this.loadFragment("tableAzienda", this.byId("panelContainer"));
         },
         navToRicercaDoc: function () {
           this.getRouter().navTo("RicercaDoc");
@@ -61,13 +61,17 @@ sap.ui.define(
                 break;
         }
     },
-    
     loadFragment: function(sFragmentName, oPanel) {
         var oFragment = sap.ui.xmlfragment("portalefornitori.portalefornitori.view.fragment.documenti." + sFragmentName, this);
         oPanel.removeAllContent();
         oPanel.addContent(oFragment);
     },
-        
+    addRow:function (oEvent) {
+
+    },
+    deleteRow:function (oEvent){
+
+    }    
       //   createInfoTable:function () { 
       //     const oTable = new sap.m.Table({
       //       id: "changeTable",

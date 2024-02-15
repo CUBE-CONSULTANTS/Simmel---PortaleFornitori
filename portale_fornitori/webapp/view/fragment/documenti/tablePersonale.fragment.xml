@@ -7,14 +7,16 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
     selectionMode="None"
     >
     <t:extension>
-        <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+        <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }" style="Clear" design="Transparent" class="sapUiSmallMarginBottom">
             <ToolbarSpacer />
             <Button
+                text="Aggiungi Dipendente"
                 icon="sap-icon://add"
                 type="Emphasized"
                 press="addRow"
             />
             <Button
+                text="Rimuovi Dipendente"
                 icon="sap-icon://delete"
                 type="Reject"
                 press="onDelete"
@@ -25,13 +27,15 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
         <t:Column >
             <Label text="{i18n>Nome}"/>
             <t:template>
-                <Text text="{personaleModel>nome}" class="emplText"/>
+              <Input class="emplText" textAlign="Center" visible="{= !${personaleModel>nome}? false : true}"
+               value="{personaleModel>nome}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${personaleModel>editable}}" />
             </t:template>
         </t:Column>
         <t:Column >
             <Label text="{i18n>Cognome}"/>
             <t:template>
-                <Text text="{personaleModel>cognome}" class="emplText"/>
+                <Input class="emplText" textAlign="Center" visible="{= !${personaleModel>cognome}? false : true}"
+                    value="{personaleModel>cognome}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${personaleModel>editable}}" />
             </t:template>
         </t:Column>
         <t:Column width="18rem" hAlign="Left">
