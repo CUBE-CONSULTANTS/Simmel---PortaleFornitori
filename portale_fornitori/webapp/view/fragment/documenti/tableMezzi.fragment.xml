@@ -2,7 +2,4 @@
 	xmlns="sap.m"
 	xmlns:c="sap.ui.core"
 >
-<Panel id="panelContainer" visible="false">
-
-</Panel>
 </c:FragmentDefinition>

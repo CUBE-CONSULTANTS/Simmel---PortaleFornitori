@@ -1,0 +1,103 @@
+<c:FragmentDefinition
+xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
+
+
+<t:TreeTable
+    rows="{path: 'personaleModel>/', parameters: {arrayNames:['documenti']}}"
+    selectionMode="None"
+    >
+    <t:extension>
+        <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+            <ToolbarSpacer />
+            <Button
+                icon="sap-icon://add"
+                type="Emphasized"
+                press="addRow"
+            />
+            <Button
+                icon="sap-icon://delete"
+                type="Reject"
+                press="onDelete"
+            />
+        </Toolbar>
+    </t:extension>
+    <t:columns>
+        <t:Column >
+            <Label text="{i18n>Nome}"/>
+            <t:template>
+                <Text text="{personaleModel>nome}" class="emplText"/>
+            </t:template>
+        </t:Column>
+        <t:Column >
+            <Label text="{i18n>Cognome}"/>
+            <t:template>
+                <Text text="{personaleModel>cognome}" class="emplText"/>
+            </t:template>
+        </t:Column>
+        <t:Column width="18rem" hAlign="Left">
+            <Label text="{i18n>Documento}"/>
+            <t:template>
+                <Text text="{personaleModel>descrizione}"/>
+            </t:template>
+        </t:Column>
+        <t:Column hAlign="Center">
+            <Label text="{i18n>Scarica}"/>
+            <t:template>
+                <Button icon="{personaleModel>scarica}" type="Emphasized"
+                  visible="{= !${personaleModel>scarica}? false : true}"/>
+            </t:template>
+        </t:Column>
+        <t:Column  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }">
+          <Label text="{i18n>Validazione}"/>
+          <t:template>
+            <Select  items="{personaleModel>validazione}" visible="{= !${personaleModel>validazione}? false : true}">
+              <c:Item key="{personaleModel>value}" text="{personaleModel>text}"/>
+            </Select>
+          </t:template>
+      </t:Column>
+        <t:Column  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+            <Label text="{i18n>Allega}"/>
+            <t:template>
+              <Button
+              type="{= !${personaleModel>allega}? 'Transparent' : 'Emphasized'}"
+              icon="{personaleModel>allega}"   
+              press="onOpenMaskAllega"             
+          />
+            </t:template>
+        </t:Column>
+        <t:Column   hAlign="Center" >
+          <Label text="{i18n>Stato}"/>
+          <t:template>
+            <c:Icon
+                alt="Download"              
+                size="1.3rem"
+                src="{personaleModel>stato}"
+                color="{personaleModel>color}"          
+        />
+          </t:template>
+      </t:Column>
+      <t:Column  hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }">
+            <Label text="{i18n>Datacaricamento}"/>
+            <t:template>
+                <Text text="{personaleModel>data}" />
+            </t:template>
+        </t:Column>
+        <t:Column   hAlign="Center" visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }">
+            <Label text="{i18n>Esito}"/>
+            <t:template>
+                <Text text="{personaleModel>esito_validazione}" />
+            </t:template>
+        </t:Column>
+        <t:Column hAlign="Center">
+            <Label text="{i18n>Scadenza}"/>
+            <t:template>
+              <Input textAlign="Center" visible="{= !${personaleModel>scadenza}? false : true}"
+               value="{personaleModel>scadenza}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${personaleModel>editable} }" />
+            </t:template>
+        </t:Column>
+        
+    </t:columns>
+    <t:extension>
+    </t:extension>
+</t:TreeTable>
+</c:FragmentDefinition>

@@ -180,102 +180,142 @@
   ],
   "documenti_dipendenti": [
     {
-      "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
-      "scarica": "sap-icon://download",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
-      "data": "12/02/2024",
-      "color": "green",
-      "scadenza": "25/03/2024",
-      "editable": true,
-      "validazione": [
+      "nome": "Luigi",
+      "cognome": "Verdi",
+      "documenti": [
         {
-          "value": "",
-          "text": ""
+          "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
+          "scarica": "sap-icon://download",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-positive",
+          "esito_validazione": "Validato",
+          "data": "12/02/2024",
+          "color": "green",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         },
         {
-          "value": "V",
-          "text": "Validato"
+          "descrizione": "Copia ultimo libro unico del lavoro",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-in-process",
+          "esito_validazione": "In Attesa",
+          "data": "12/02/2024",
+          "color": "orange",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         },
         {
-          "value": "N",
-          "text": "Non Validato"
+          "descrizione": "Copia documento di riconoscimento del dipendente",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "12/02/2024",
+          "color": "red",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
+        },
+        {
+          "descrizione": "Attestati formazione secondo il d.lgs 81/08",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "12/02/2024",
+          "color": "red",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         }
       ]
     },
     {
-      "descrizione": "Copia ultimo libro unico del lavoro del personale in ingresso",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-in-process",
-      "esito_validazione": "In Attesa",
-      "data": "12/02/2024",
-      "color": "orange",
-      "scadenza": "25/03/2024",
-      "editable": true,
-      "validazione": [
+      "nome": "Mario",
+      "cognome": "Rossi",
+      "documenti": [
         {
-          "value": "",
-          "text": ""
+          "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
+          "scarica": "sap-icon://download",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-positive",
+          "esito_validazione": "Validato",
+          "data": "12/02/2024",
+          "color": "green",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         },
         {
-          "value": "V",
-          "text": "Validato"
+          "descrizione": "Copia ultimo libro unico del lavoro",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-in-process",
+          "esito_validazione": "In Attesa",
+          "data": "12/02/2024",
+          "color": "orange",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         },
         {
-          "value": "N",
-          "text": "Non Validato"
-        }
-      ]
-    },
-    {
-      "descrizione": "Copia documento di riconoscimento di ogni dipendente",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-negative",
-      "esito_validazione": "Non Allegato",
-      "data": "12/02/2024",
-      "color": "red",
-      "scadenza": "25/03/2024",
-      "editable": true,
-      "validazione": [
-        {
-          "value": "",
-          "text": ""
+          "descrizione": "Copia documento di riconoscimento del dipendente",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "12/02/2024",
+          "color": "red",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         },
         {
-          "value": "V",
-          "text": "Validato"
-        },
-        {
-          "value": "N",
-          "text": "Non Validato"
-        }
-      ]
-    },
-    {
-      "descrizione": "Attestati formazione secondo il d.lgs 81/08",
-      "scarica": "",
-      "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-negative",
-      "esito_validazione": "Non Allegato",
-      "data": "12/02/2024",
-      "color": "red",
-      "scadenza": "25/03/2024",
-      "editable": true,
-      "validazione": [
-        {
-          "value": "",
-          "text": ""
-        },
-        {
-          "value": "V",
-          "text": "Validato"
-        },
-        {
-          "value": "N",
-          "text": "Non Validato"
+          "descrizione": "Attestati formazione secondo il d.lgs 81/08",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "12/02/2024",
+          "color": "red",
+          "scadenza": "25/03/2024",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
         }
       ]
     }
