@@ -69,7 +69,7 @@ sap.ui.define(
         oPanel.removeAllContent();
         oPanel.addContent(oFragment);
     },
-    addRow:function (oEvent) {
+    addRowPers:function (oEvent) {
       debugger
       let oModel = this.getModel("personaleModel")
       let currentData = oModel.getProperty("/");
@@ -85,9 +85,30 @@ sap.ui.define(
       currentData.push(this.newRowMezzo)
       oModel.setProperty("/",currentData)
     },
-    deleteRow:function (oEvent){
+    deleteRow:function (oEvent,modelName){
       debugger
-    }    
+      let table = oEvent.getSource().getParent().getParent()
+      let oRowsToDelete = table.getSelectedIndices() 
+      let oModel = table.getModel(modelName);
+    
+        if (oRowsToDelete.length > 0) { 
+            for (let i = oRowsToDelete.length - 1; i >= 0; i--) {
+                let path = oRowsToDelete[i];
+                let aData = oModel.getData();
+                aData.splice(path, 1); 
+            }
+            table.clearSelection(); 
+            oModel.updateBindings(); 
+        } else {
+            MessageBox.error("Selezionare almeno un elemento");
+        }
+      },
+      deleteMezzo: function (oEvent){
+        this.deleteRow(oEvent,"mezziModel")
+      }, 
+      deletePers: function(oEvent){
+        this.deleteRow(oEvent,"personaleModel")
+      }
       //   createInfoTable:function () { 
       //     const oTable = new sap.m.Table({
       //       id: "changeTable",

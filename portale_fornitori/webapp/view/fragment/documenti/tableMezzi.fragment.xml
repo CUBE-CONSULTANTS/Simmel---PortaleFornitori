@@ -2,8 +2,9 @@
 xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
 
 <t:TreeTable
+
     rows="{path: 'mezziModel>/', parameters: {arrayNames:['documenti']}}"
-    selectionMode="None"
+    selectionMode="MultiToggle" rowSelectionChange="onRowMezziChange"
     >
     <t:extension>
         <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }" style="Clear" design="Transparent" class="sapUiSmallMarginBottom">
@@ -18,7 +19,7 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
 				text="Rimuovi Mezzo"
                 icon="sap-icon://delete"
                 type="Reject"
-                press="deleteRowMezzo"
+                press="deleteMezzo"
             />
         </Toolbar>
     </t:extension>

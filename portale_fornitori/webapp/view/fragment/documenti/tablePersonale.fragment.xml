@@ -4,7 +4,7 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
 
 <t:TreeTable
     rows="{path: 'personaleModel>/', parameters: {arrayNames:['documenti']}}"
-    selectionMode="None"
+    selectionMode="MultiToggle" rowSelectionChange="onRowPersChange"
     >
     <t:extension>
         <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }" style="Clear" design="Transparent" class="sapUiSmallMarginBottom">
@@ -13,13 +13,13 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
                 text="Aggiungi Dipendente"
                 icon="sap-icon://add"
                 type="Emphasized"
-                press="addRow"
+                press="addRowPers"
             />
             <Button
                 text="Rimuovi Dipendente"
                 icon="sap-icon://delete"
                 type="Reject"
-                press="onDelete"
+                press="deletePers"
             />
         </Toolbar>
     </t:extension>

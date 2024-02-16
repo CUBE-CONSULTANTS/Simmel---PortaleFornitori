@@ -21,13 +21,14 @@
         </f:content>
         <f:footer>
             <OverflowToolbar    
-            visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }"         
+                
             >
             <Button                    
             icon="sap-icon://nav-back"                    
             text="{i18n>back}"                  
             type="Emphasized"
-            press="navToRicercaDoc" 
+            press="navToRicercaDoc"
+            visible="{= ${userModel>/tipoUtente} === 'Interno' ? true : false }"     
         />                   
                 <ToolbarSpacer
                    />
