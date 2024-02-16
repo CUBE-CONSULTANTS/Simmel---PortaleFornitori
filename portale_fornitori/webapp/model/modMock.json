@@ -619,13 +619,13 @@
         },
         {
           "descrizione": "Attestati formazione secondo il d.lgs 81/08",
-          "scarica": "...",
+          "scarica": "",
           "allega": "sap-icon://upload",
           "stato": "sap-icon://status-negative",
           "esito_validazione": "Non Allegato",
           "data": "...",
           "color": "red",
-          "scadenza": "",
+          "scadenza": "...",
           "editable": true,
           "validazione": [
             { "value": "", "text": "" },
