@@ -72,8 +72,7 @@ xmlns:fb="sap.ui.comp.filterbar"
   <fb:control>
     <Input
     value="{Filtro>/piva}"
-      showValueHelp="true"
-      
+      showValueHelp="true"      
       submit="onChangeFornitore"
       type="Text"
     />
@@ -82,4 +81,5 @@ xmlns:fb="sap.ui.comp.filterbar"
 
   </fb:filterGroupItems>
 </fb:FilterBar>
+
 </c:FragmentDefinition>

@@ -2,7 +2,6 @@
 	xmlns="sap.m"
 	xmlns:c="sap.ui.core"
 >
-<VBox backgroundDesign="Transparent" height="100%" width="100%" class="sapUiSmallMarginTopBottom">
 
 <Table
       sticky="HeaderToolbar,ColumnHeaders"
@@ -59,5 +58,5 @@
         </ColumnListItem>
       </items>
       </Table>
-</VBox>
+
 </c:FragmentDefinition>

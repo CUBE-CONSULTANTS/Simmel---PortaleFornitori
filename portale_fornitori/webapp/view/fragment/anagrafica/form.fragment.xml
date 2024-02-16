@@ -3,21 +3,15 @@ xmlns="sap.m"
 xmlns:c="sap.ui.core"
 xmlns:f="sap.ui.layout.form"
 >
-<VBox backgroundDesign="Solid" alignItems="Inherit" class="sapUiSmallMarginTopBottom"   >
+
 <f:SimpleForm 
-class="sapUiTinyMarginTopBottom" 
   editable="false"
   layout="ResponsiveGridLayout"
-  labelSpanXL="4"
-  labelSpanL="2"
-  labelSpanM="12"
-  labelSpanS="12"
-  adjustLabelSpan="false"
-  emptySpanXL="0"
+  emptySpanXL="4"
   emptySpanL="1"
   emptySpanM="0"
   emptySpanS="0"
-  columnsXL="2"
+  columnsXL="1"
   columnsL="1"
   columnsM="1"
   singleContainerFullSize="false" 
@@ -54,6 +48,6 @@ class="sapUiTinyMarginTopBottom"
     
   </f:content>
 </f:SimpleForm>
-</VBox>
+
 
 </c:FragmentDefinition>

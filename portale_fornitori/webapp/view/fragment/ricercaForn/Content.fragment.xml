@@ -3,9 +3,6 @@
 	xmlns:c="sap.ui.core"
 >
 
-<VBox  height="100%" width="100%" class="sapUiSmallMarginTopBottom">
-  
-  
 <Table
 sticky="HeaderToolbar,ColumnHeaders"
 growing="true"
@@ -61,5 +58,5 @@ items="{anagraficaModel>/}"
   </ColumnListItem>
 </items>
 </Table>
-</VBox>
+
 </c:FragmentDefinition>

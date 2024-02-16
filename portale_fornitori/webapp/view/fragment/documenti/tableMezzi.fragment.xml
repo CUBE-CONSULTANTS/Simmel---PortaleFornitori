@@ -9,16 +9,16 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
         <Toolbar visible="{= ${userModel>/tipoUtente} === 'Interno' ? false : true }" style="Clear" design="Transparent" class="sapUiSmallMarginBottom">
             <ToolbarSpacer />
             <Button
-								text="Aggiungi Mezzo"
+				text="Aggiungi Mezzo"
                 icon="sap-icon://add"
                 type="Emphasized"
-                press="addRow"
+                press="addRowMezzo"
             />
             <Button
-								text="Rimuovi Mezzo"
+				text="Rimuovi Mezzo"
                 icon="sap-icon://delete"
                 type="Reject"
-                press="deleteRow"
+                press="deleteRowMezzo"
             />
         </Toolbar>
     </t:extension>

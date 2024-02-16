@@ -27,6 +27,9 @@ sap.ui.define(
           this.setModel(oModelDocMezzi,"mezziModel")
           let oValDoc = new JSONModel(data.validazione)
           this.setModel(oValDoc, "valModel")
+
+          this.newRowPers = data.newRowPers
+          this.newRowMezzo = data.newRowMezzo
           this.loadFragment("tableAzienda", this.byId("panelContainer"));
         },
         navToRicercaDoc: function () {
@@ -67,10 +70,23 @@ sap.ui.define(
         oPanel.addContent(oFragment);
     },
     addRow:function (oEvent) {
-
+      debugger
+      let oModel = this.getModel("personaleModel")
+      let currentData = oModel.getProperty("/");
+         
+      currentData.push(this.newRowPers)
+      oModel.setProperty("/",currentData)
+    },
+    addRowMezzo:function (oEvent) {
+      debugger
+      let oModel = this.getModel("mezziModel")
+      let currentData = oModel.getProperty("/");
+         
+      currentData.push(this.newRowMezzo)
+      oModel.setProperty("/",currentData)
     },
     deleteRow:function (oEvent){
-
+      debugger
     }    
       //   createInfoTable:function () { 
       //     const oTable = new sap.m.Table({

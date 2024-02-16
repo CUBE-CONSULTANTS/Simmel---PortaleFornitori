@@ -54,7 +54,7 @@
   "documenti_azienda": [
     {
       "descrizione": "DURC",
-      "scarica": "sap-icon://download",
+      "scarica": "",
       "allega": "sap-icon://upload",
       "stato": "sap-icon://status-negative",
       "esito_validazione": "Non Allegato",
@@ -104,7 +104,7 @@
     },
     {
       "descrizione": "Copia Nulla Osta dell’Ufficio di collocamento",
-      "scarica": "sap-icon://download",
+      "scarica": "",
       "allega": "sap-icon://upload",
       "stato": "sap-icon://status-negative",
       "esito_validazione": "Non Allegato",
@@ -182,7 +182,7 @@
     {
       "nome": "Luigi",
       "cognome": "Verdi",
-      "documenti": [
+      "documenti": [  
         {
           "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
           "scarica": "sap-icon://download",
@@ -201,7 +201,7 @@
         },
         {
           "descrizione": "Copia ultimo libro unico del lavoro",
-          "scarica": "",
+          "scarica": "sap-icon://download",
           "allega": "sap-icon://upload",
           "stato": "sap-icon://status-in-process",
           "esito_validazione": "In Attesa",
@@ -271,7 +271,7 @@
         },
         {
           "descrizione": "Copia ultimo libro unico del lavoro",
-          "scarica": "",
+          "scarica": "sap-icon://download",
           "allega": "sap-icon://upload",
           "stato": "sap-icon://status-in-process",
           "esito_validazione": "In Attesa",
@@ -352,7 +352,7 @@
        },
       {
       "descrizione": "Libretto di circolazione Automezzo",
-      "scarica": "",
+      "scarica": "sap-icon://download",
       "allega": "sap-icon://upload",
       "stato": "sap-icon://status-positive",
       "esito_validazione": "Validato",
@@ -379,10 +379,10 @@
       "descrizione": "Contrassegno assicurazione Automezzo",
       "scarica": "",
       "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
       "data": "12/02/2024",
-      "color": "green",
+      "color": "red",
       "scadenza": "25/03/2024",
       "editable": true,
       "validazione": [
@@ -433,7 +433,7 @@
        },
       {
       "descrizione": "Libretto di circolazione Automezzo",
-      "scarica": "",
+      "scarica": "sap-icon://download",
       "allega": "sap-icon://upload",
       "stato": "sap-icon://status-positive",
       "esito_validazione": "Validato",
@@ -460,10 +460,10 @@
       "descrizione": "Contrassegno assicurazione Automezzo",
       "scarica": "",
       "allega": "sap-icon://upload",
-      "stato": "sap-icon://status-positive",
-      "esito_validazione": "Validato",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
       "data": "12/02/2024",
-      "color": "green",
+      "color": "red",
       "scadenza": "25/03/2024",
       "editable": true,
       "validazione": [
@@ -514,7 +514,7 @@
        },
       {
       "descrizione": "Libretto di circolazione Automezzo",
-      "scarica": "",
+      "scarica": "sap-icon://download",
       "allega": "sap-icon://upload",
       "stato": "sap-icon://status-positive",
       "esito_validazione": "Validato",
@@ -539,7 +539,7 @@
     },
     {
       "descrizione": "Contrassegno assicurazione Automezzo",
-      "scarica": "",
+      "scarica": "sap-icon://download",
       "allega": "sap-icon://upload",
       "stato": "sap-icon://status-positive",
       "esito_validazione": "Validato",
@@ -564,6 +564,158 @@
     }
       ]
     }
-  ]
+  ],
+  "newRowPers": {
+    "nome": "...",
+      "cognome": "...",
+      "documenti": [  
+        {
+          "descrizione": "RICHIESTA PERMESSO DI INGRESSO",
+          "scarica": "sap-icon://download",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "...",
+          "color": "red",
+          "scadenza": "...",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
+        },
+        {
+          "descrizione": "Copia ultimo libro unico del lavoro",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "...",
+          "color": "red",
+          "scadenza": "...",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
+        },
+        {
+          "descrizione": "Copia documento di riconoscimento del dipendente",
+          "scarica": "",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "...",
+          "color": "red",
+          "scadenza": "...",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
+        },
+        {
+          "descrizione": "Attestati formazione secondo il d.lgs 81/08",
+          "scarica": "...",
+          "allega": "sap-icon://upload",
+          "stato": "sap-icon://status-negative",
+          "esito_validazione": "Non Allegato",
+          "data": "...",
+          "color": "red",
+          "scadenza": "",
+          "editable": true,
+          "validazione": [
+            { "value": "", "text": "" },
+            { "value": "V", "text": "Validato" },
+            { "value": "N", "text": "Non Validato" }
+          ]
+        }
+      ]
+  },
+  "newRowMezzo": {
+    "descrMezzo": "...",
+      "Targa": "...",
+      "documenti" :[
+       {
+        "descrizione": "RICHIESTA PERMESSO D’INGRESSO PER AUTOMEZZI",
+        "scarica": "",
+        "allega": "sap-icon://upload",
+        "stato": "sap-icon://status-negative",
+        "esito_validazione": "Non Allegato",
+        "data": "...",
+        "color": "red",
+        "scadenza": "...",
+        "editable": true,
+        "validazione": [
+          {
+            "value": "",
+            "text": ""
+          },
+          {
+            "value": "V",
+            "text": "Validato"
+          },
+          {
+            "value": "N",
+            "text": "Non Validato"
+          }
+        ]
+       },
+      {
+      "descrizione": "Libretto di circolazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "...",
+      "color": "red",
+      "scadenza": "...",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    },
+    {
+      "descrizione": "Contrassegno assicurazione Automezzo",
+      "scarica": "",
+      "allega": "sap-icon://upload",
+      "stato": "sap-icon://status-negative",
+      "esito_validazione": "Non Allegato",
+      "data": "...",
+      "color": "red",
+      "scadenza": "...",
+      "editable": true,
+      "validazione": [
+        {
+          "value": "",
+          "text": ""
+        },
+        {
+          "value": "V",
+          "text": "Validato"
+        },
+        {
+          "value": "N",
+          "text": "Non Validato"
+        }
+      ]
+    }
+      ]
+    }
+  }
   
-}
+

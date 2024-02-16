@@ -4,11 +4,8 @@
     xmlns="sap.m"
 >
     <f:DynamicPageHeader pinnable="false" >
-        <f:content >
             <Title
             level="H3"
-            text="{i18n>AnagraficaFornitore} - {anagraficaModel>/0/nome} "
-            />
-        </f:content> 
+            text="{= ${i18n>Anagrafica} + ' ' + (${userModel>/tipoUtente} === 'Interno' ? ${anagraficaModel>/0/nome} : '') }"/>
     </f:DynamicPageHeader>
 </core:FragmentDefinition>

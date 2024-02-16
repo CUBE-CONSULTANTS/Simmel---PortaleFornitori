@@ -9,7 +9,7 @@
     <f:DynamicPage showFooter="false"
         busy="{master>/options/busy}"
         busyIndicatorDelay="0"
-        preserveHeaderStateOnScroll="false"
+        preserveHeaderStateOnScroll="true"
         toggleHeaderOnTitleClick="true">
         <f:header>
           <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.templateN.Header"

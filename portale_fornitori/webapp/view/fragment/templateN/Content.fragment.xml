@@ -3,7 +3,6 @@
 	xmlns:c="sap.ui.core"
 	xmlns:u="sap.ui.unified"
 >
-<VBox height="100%" backgroundDesign="Transparent" class="sapUiSmallMarginTopBottom">
 	<Table
 	class="table"
 	sticky="ColumnHeaders"
@@ -15,7 +14,7 @@
 		<Column width="60px" hAlign="Left">
 			<Text text="{i18n>IdDocumento}" />
 		</Column>
-		<Column width="10px"  hAlign="Center">
+		<Column width="12px"  hAlign="Center">
 			<Text text="{i18n>Allega}" />
 		</Column>			
 		
@@ -72,5 +71,5 @@
 		</ColumnListItem>
 	</items>
 	</Table>
-</VBox>
+
 </c:FragmentDefinition>
