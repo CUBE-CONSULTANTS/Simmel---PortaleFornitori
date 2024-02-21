@@ -29,14 +29,7 @@ sap.ui.define(
           let oModelDoc = new JSONModel(data.documenti);
           this.setModel(oModelDoc, "docModel");
         },
-        handleValueHelp:function () {
-          debugger
-          this.setModel(new JSONModel(), "dialogModel")
-          this.onOpenDialog("mDialog", "portalefornitori.portalefornitori.view.fragment.ricercaForn.dialogRicerca", this, "dialogModel")
-        },
-        onClose:function (oEvent) {
-          oEvent.getSource().getParent().getParent().close()
-        }
+
       }
     );
   }

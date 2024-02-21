@@ -43,7 +43,8 @@ sap.ui.define(
           this.userType === "Interno"
           ? this.navToRicercaDoc()
           : this.navToDocumenti();
-        }
+        },
+        
       }
     );
   }

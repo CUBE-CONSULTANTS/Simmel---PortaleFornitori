@@ -13,7 +13,7 @@
         toggleHeaderOnTitleClick="true">
         <f:header>
             <f:DynamicPageHeader pinnable="false">
-          <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.ricercaDoc.filterbar"
+          <core:Fragment fragmentName="portalefornitori.portalefornitori.view.fragment.filterbar"
           type="XML" />
         </f:DynamicPageHeader>
         </f:header>

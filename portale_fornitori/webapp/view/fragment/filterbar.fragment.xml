@@ -21,10 +21,9 @@ xmlns:fb="sap.ui.comp.filterbar"
       <fb:control>
         <Input
           value="{Filtro>/Fornitore}"
-          showValueHelp="true"
-          
-          submit="onChangeFornitore"
-          type="Text"
+          showValueHelp="true"      
+          valueHelpRequest=".handleValueHelp"    
+          type="Number"
         />
       </fb:control>
     </fb:FilterGroupItem>
@@ -37,10 +36,9 @@ xmlns:fb="sap.ui.comp.filterbar"
     >
     <fb:control>
       <Input
-        value="{Filtro>/descr}"
+        value="{Filtro>/Descrizione}"
         showValueHelp="true"
         valueHelpRequest=".handleValueHelp"
-        submit="onChangeFornitore"
         type="Text"
       />
     </fb:control>
@@ -56,8 +54,7 @@ xmlns:fb="sap.ui.comp.filterbar"
       <Input
       value="{Filtro>/Paese}"
         showValueHelp="true"
-        
-        submit="onChangeFornitore"
+        valueHelpRequest=".handleValueHelp"
         type="Text"
       />
     </fb:control>
@@ -71,15 +68,15 @@ xmlns:fb="sap.ui.comp.filterbar"
 >
   <fb:control>
     <Input
-    value="{Filtro>/piva}"
-      showValueHelp="true"
-      
-      submit="onChangeFornitore"
-      type="Text"
+    value="{Filtro>/P.IVA}"
+      showValueHelp="true"    
+      valueHelpRequest=".handleValueHelp"  
+      type="Number"
     />
   </fb:control>
 </fb:FilterGroupItem>
 
   </fb:filterGroupItems>
 </fb:FilterBar>
+
 </c:FragmentDefinition>

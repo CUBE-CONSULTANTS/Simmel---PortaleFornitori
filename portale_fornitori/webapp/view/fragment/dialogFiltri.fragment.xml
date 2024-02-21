@@ -7,7 +7,7 @@
 <Dialog
 contentWidth="700px"
 contentHeight="800px"
-title="{i18n>Descrizione}"
+title="{i18n>Cerca} {dialogModel>/nomeFiltro}"
 >
 <fb:FilterBar
 search="onSearch"
@@ -26,8 +26,7 @@ showFilterConfiguration="false"
   >
     <fb:control>
       <Input
-        value="{sFilter>/Pernr}"
-        placeholder="{i18n>InserireDescrizione}"
+        value="{sFilter>/Pernr}"	
         change="onSearch"
         type="Text"
       />
@@ -39,7 +38,7 @@ showFilterConfiguration="false"
 			items=""
 			growing="true"
 			growingThreshold="50"
-			headerText="{i18n>Descrizione}"
+			headerText="{dialogModel>/nomeFiltro}"
 		>
 			<m:CustomListItem
 				type="Active"
@@ -59,7 +58,7 @@ showFilterConfiguration="false"
 				<ToolbarSpacer />
 				<m:Button
 					text="{i18n>Chiudi}"
-					press="onClose"
+					press="onCloseDialog"
 				/>
 			</OverflowToolbar>
     </footer>
