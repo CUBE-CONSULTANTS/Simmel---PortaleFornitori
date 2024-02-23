@@ -48,8 +48,8 @@ sap.ui.define([
                  
                   this.setModel(user, "userModel");
                   const randomUserType = getRandomUserType();
-                  this.getModel("userModel").setProperty("/tipoUtente", "Fornitore");
-                  this.getModel("userModel").setProperty("/nome", "Fornitore");    
+                  this.getModel("userModel").setProperty("/tipoUtente", randomUserType);
+                  this.getModel("userModel").setProperty("/nome", randomUserType);    
                   this.getRouter().navTo("Master");  
                   
                 //set icon pool
