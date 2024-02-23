@@ -77,7 +77,7 @@
             <Text text="{docModel>esito_validazione}" />
           </cells>
           <cells >
-            <Input textAlign="Center" value="{docModel>scadenza}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${docModel>editable} }" />
+            <DatePicker textAlign="Center" displayFormat="dd/MM/yyyy" value="{docModel>scadenza}" editable="false" />
           </cells>
           
         </ColumnListItem>

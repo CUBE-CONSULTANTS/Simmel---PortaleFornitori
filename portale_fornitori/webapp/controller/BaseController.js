@@ -4,15 +4,17 @@ sap.ui.define(
     "sap/ui/core/routing/History",
     "sap/ui/core/UIComponent",
     "sap/ui/core/Fragment",
-    "sap/ui/model/json/JSONModel"
+    "sap/ui/model/json/JSONModel",
+    "portalefornitori/portalefornitori/model/formatter"
 
   ],
-  function (Controller, History, UIComponent, Fragment, JSONModel) {
+  function (Controller, History, UIComponent, Fragment, JSONModel, formatter) {
     "use strict";
 
     return Controller.extend(
       "portalefornitori.portalefornitori.controller.BaseController",
       {
+        formatter: formatter,
         /**
          * Convenience method for getting the view model by name in every controller of the application.
          * @public
@@ -86,7 +88,38 @@ sap.ui.define(
         getRouter: function () {
           return UIComponent.getRouterFor(this);
         },
+        
+        navToMaster: function () {
+          this.getRouter().navTo("Master");
+        },
+        navToRicercaDoc: function () {
+          this.getRouter().navTo("RicercaDoc");
+        },
+        navToRicerca: function () {
+          this.getRouter().navTo("RicercaForn");
+        },
 
+        navToDocumenti: function () {
+          this.getRouter().navTo("Documenti");
+        },
+
+        navToTemplate: function () {
+          this.getRouter().navTo("Template");
+        },
+        navToAnagrafica: function () {
+          this.getRouter().navTo("Anagrafica");
+        },
+        onAnagraficaBtnPress: function () {
+          debugger;
+          this.userType === "Interno"
+            ? this.navToRicerca()
+            : this.navToAnagrafica();
+        },
+        onDocBtnPress: function () {
+          this.userType === "Interno"
+          ? this.navToRicercaDoc()
+          : this.navToDocumenti();
+        },
         onNavBack: function () {
           const sPreviousHash = History.getInstance().getPreviousHash();
 

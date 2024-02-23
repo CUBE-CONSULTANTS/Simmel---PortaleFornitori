@@ -6,10 +6,10 @@ sap.ui.define(
   /**
    * @param {typeof sap.ui.core.mvc.Controller} Controller
    */
-  function (Controller, JSONModel,Fragment) {
+  function (BaseController, JSONModel,Fragment) {
     "use strict";
 
-    return Controller.extend(
+    return BaseController.extend(
       "portalefornitori.portalefornitori.controller.Documenti",
       {
         onInit: async function () {
@@ -31,15 +31,17 @@ sap.ui.define(
           this.newRowPers = data.newRowPers
           this.newRowMezzo = data.newRowMezzo
           this.loadFragment("tableAzienda", this.byId("panelContainer"));
-        },
-        navToRicercaDoc: function () {
-          this.getRouter().navTo("RicercaDoc");
+          this.dateToChange
         },
         onOpenMaskAllega: function (oEvent) {
           debugger
           let mask = new JSONModel()
           this.setModel(mask,"modelloMask")
           this.onOpenDialog("nDialog","portalefornitori.portalefornitori.view.fragment.documenti.maskAllegati",this,"modelloMask");
+
+          oEvent.getSource().getBindingContext("docModel") ? this.dateToChange = oEvent.getSource().getBindingContext("docModel") :
+          oEvent.getSource().getBindingContext("personaleModel") ? this.dateToChange = oEvent.getSource().getBindingContext("personaleModel") :
+          oEvent.getSource().getBindingContext("mezziModel") ?this.dateToChange = oEvent.getSource().getBindingContext("mezziModel") : null   
         },
         onCloseAllegati:function (oEvent) {
           oEvent.getSource().getParent().getParent().close()
@@ -108,7 +110,15 @@ sap.ui.define(
       }, 
       deletePers: function(oEvent){
         this.deleteRow(oEvent,"personaleModel")
-      }
+      },
+      onDatePickerMaskChange: function (oEvent){
+        debugger
+        let dueDate = oEvent.getSource().getModel().getProperty("/dataScad")
+        let oModelToChange =  this.dateToChange.getModel()
+        if(this.formatter.ctrlDatePickerValue(oEvent)){     
+          oModelToChange.setProperty(this.dateToChange.getPath() + "/scadenza", dueDate)  
+        }      
+      },
       //   createInfoTable:function () { 
       //     const oTable = new sap.m.Table({
       //       id: "changeTable",

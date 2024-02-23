@@ -3,10 +3,10 @@ sap.ui.define(
   /**
    * @param {typeof sap.ui.core.mvc.Controller} Controller
    */
-  function (Controller, JSONModel) {
+  function (BaseController, JSONModel) {
     "use strict";
 
-    return Controller.extend(
+    return BaseController.extend(
       "portalefornitori.portalefornitori.controller.Anagrafica",
       {
         onInit: async function () {
@@ -18,10 +18,7 @@ sap.ui.define(
           let oModelDoc = new JSONModel(data.documenti);
           this.setModel(oModelAn, "anagraficaModel");
           this.setModel(oModelDoc, "docModel");
-        },
-        navToRicerca: function () {
-          this.getRouter().navTo("RicercaForn");
-        },
+        },        
       }
     );
   }

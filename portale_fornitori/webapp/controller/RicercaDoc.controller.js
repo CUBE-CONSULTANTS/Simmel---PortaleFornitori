@@ -4,19 +4,15 @@ sap.ui.define(
   /**
    * @param {typeof sap.ui.core.mvc.Controller} Controller
    */
-  function (Controller, JSONModel) {
+  function (BaseController, JSONModel) {
     "use strict";
 
-    return Controller.extend(
+    return BaseController.extend(
       "portalefornitori.portalefornitori.controller.RicercaDoc",
       {
         onInit: async function () {
           this.setMockData();
           debugger;
-        },
-        navToDocumenti: function () {
-          debugger
-          this.getRouter().navTo("Documenti");
         },
         setMockData: async function () {
           let objJSon = await fetch("/model/modMock.json");

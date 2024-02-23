@@ -7,7 +7,7 @@
   <Dialog
     contentWidth="500px"
     
-    title="{i18n>Visura}"
+    title="{i18n>Allega Documento}"
   >
       <f:SimpleForm
         class="sapUiTinyMarginTopBottom"
@@ -29,13 +29,10 @@
       >
         <f:content>
           <VBox width="100%">
-            <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween" >
-              <Label design="Bold" text="{i18n>GiorniValidita}:" />
-              <Input value="" width="20rem" />
-            </HBox>
+            
             <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
-              <Label design="Bold" text="{i18n>Rilascio}*:" />
-                <DatePicker required="true" width="20rem"/>
+              <Label design="Bold" text="{i18n>Scadenza}*:" />
+                <DatePicker required="true" width="20rem" value=""/>
             </HBox>
             <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
               <Label design="Bold" text="{i18n>File}*:" />

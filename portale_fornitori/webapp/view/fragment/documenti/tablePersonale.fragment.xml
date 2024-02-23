@@ -95,8 +95,8 @@ xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:t="sap.ui.table">
         <t:Column hAlign="Center">
             <Label text="{i18n>Scadenza}"/>
             <t:template>
-              <Input textAlign="Center" visible="{= !${personaleModel>scadenza}? false : true}"
-               value="{personaleModel>scadenza}" editable="{= ${userModel>/tipoUtente} === 'Interno' ? false : ${personaleModel>editable} }" />
+              <DatePicker textAlign="Center" displayFormat="dd/MM/yyyy" visible="{= !${personaleModel>scadenza}? false : true}"
+               value="{personaleModel>scadenza}" editable="false" />
             </t:template>
         </t:Column>
         
